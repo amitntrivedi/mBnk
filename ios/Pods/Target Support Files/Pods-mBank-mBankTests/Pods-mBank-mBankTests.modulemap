@@ -1,0 +1,6 @@
+module Pods_mBank_mBankTests {
+  umbrella header "Pods-mBank-mBankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
