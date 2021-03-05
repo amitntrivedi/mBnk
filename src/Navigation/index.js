@@ -6,7 +6,7 @@ import {NavigationContainer,   getFocusedRouteNameFromRoute } from "@react-navig
 // import {   createDrawerNavigator, } from '@react-navigation/drawer';
 import { Images, Colors, fonts } from "../common"; 
 import {
-  Login, LandingPage, SignUp,VerifyPassword,ResetPassword,ResetPasswordVerify
+  Login, LandingPage, SignUp,VerifyPassword,ResetPassword,ResetPasswordVerify,Home
 } from '@containers'
 import { SideBar } from "@components";
 // import { Auth } from 'aws-amplify';
@@ -15,11 +15,13 @@ import Toast from 'react-native-toast-message';
 const Stack = createStackNavigator();
 
 const LoginStack = createStackNavigator();
+const HomeStack = createStackNavigator();
 
 export const AuthContext = React.createContext();
 
 const LoginStackScreens = () =>{
-    return (<LoginStack.Navigator>
+    return (
+    <LoginStack.Navigator>
       <LoginStack.Screen name="Login" component={Login} options={{headerShown: false}}/>
       <LoginStack.Screen name="LandingPage" component={LandingPage} options={{headerShown: false}}/>
       <LoginStack.Screen name="SignUp" component={SignUp} options={{headerShown: false}}/>
@@ -28,6 +30,13 @@ const LoginStackScreens = () =>{
       <LoginStack.Screen name="ResetPasswordVerify" component={ResetPasswordVerify} options={{title:"Verify Password",headerShown: true}}/>
     </LoginStack.Navigator>)
 }
+const HomeStackScreens = () =>{
+  return (
+  <HomeStack.Navigator>
+    <HomeStack.Screen name="Home" component={Home} options={{title:"Home",headerShown: false}}/>
+  </HomeStack.Navigator>)
+}
+
 
 
 const screenOptions = {
@@ -130,7 +139,7 @@ export default function Navigation({ navigation }) {
  
   return (
     <NavigationContainer>
-          <LoginStackScreens ></LoginStackScreens>          
+      <HomeStackScreens></HomeStackScreens>
         <Toast ref={(ref) => Toast.setRef(ref)} />
     </NavigationContainer>
   );
