@@ -51,7 +51,6 @@ export default function Login(props) {
     const fieldRef1 = React.createRef();
 
     const {navigation} = props;
-
     Keyboard.dismiss();
     if (email === '' || email == undefined) {
       setEmailError('Please Enter Email');

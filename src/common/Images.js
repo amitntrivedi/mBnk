@@ -33,6 +33,12 @@ export let Images = {
     LandingImg: require('../assets/LandingImg.png'),
 
 
-    mbanklogo: require('../assets/mpinlogo.png')
+    mbanklogo: require('../assets/mpinlogo.png'),
+
+    addUser: require('../assets/add-user.png'),
+    homeTap: require('../assets/hometap.png'),
+    calculator: require('../assets/calculator.png'),
+    mobile:  require('../assets/mobile-phone.png'),
+    transfer: require('../assets/transfer.png'),
 }
 

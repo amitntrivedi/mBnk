@@ -12,7 +12,7 @@ export default function LandingPage(props) {
   const { navigation } = props;
 
   return (
-    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'white' }}>
+    <View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'red' }}>
       <View style={{ flex: 1 }}>
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
           <ImageBackground
