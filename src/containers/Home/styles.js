@@ -7,47 +7,61 @@ import { fonts, Images, Colors } from '../../common'
 
 const styles = StyleSheet.create({
 
-  mainView:{
-    flex: 1,backgroundColor: 'white'
+  mainView: {
+    flex: 1, backgroundColor: 'white'
   },
-  topView:{
-    flex:0.4,
-    paddingLeft:20,justifyContent:"space-evenly",backgroundColor: '#000000',borderBottomWidth: 1,
-    borderColor: 'black',borderBottomRightRadius:25,borderBottomLeftRadius:25,
+  topView: {
+    flex: 0.4,
+    paddingLeft: 20, justifyContent: "space-evenly", backgroundColor: '#000000DD', borderBottomWidth: 1,
+    borderColor: 'black', borderBottomRightRadius: 25, borderBottomLeftRadius: 25,
+    shadowOffset:{height:5, width:0},
+    shadowOpacity:0.5,
+    shadowColor:"#000000",
+    elevation:5,
+
+
+  },
+  dateText: {
+    color: "white", fontSize: 18
+  },
+  balancetext: {
+    color: "#E20000", 
+    fontSize: 20,
+    fontWeight:"700",
+    fontFamily:"Roboto-Bold"
+  },
+  amttext: {
+    color: "white", 
+    fontSize: 25,
+    // fontWeight:"700",
+    fontFamily:"Roboto-Bold"
+  },
+  middleView: {
+    flex: 0.1, 
+    flexDirection: 'row',
+    justifyContent: "space-evenly", alignItems: 'center', paddingHorizontal: 20, marginTop: 10,
     
   },
-  dateText:{
-    color:"white",fontSize: 18
+  middleLeftView: {
+    flex: 0.8, justifyContent: "center"
   },
-  balancetext:{
-    color:"#E20000",fontSize: 20
+  middleLeftText: {
+    color: "#E20000", fontSize: 20
   },
-  amttext:{
-    color:"white",fontSize: 25
+  middleRight: {
+    flex: 0.2
   },
-  middleView:{
-    flex:0.1,flexDirection: 'row',justifyContent:"space-evenly",alignItems: 'center',paddingHorizontal: 20,marginTop:10 
+  middlerightbutton: {
+    width: 60, height: 60, backgroundColor: '#000000', borderRadius: 10, justifyContent: "center", alignItems: "center"
   },
-  middleLeftView:{
-    flex:0.8,justifyContent:"center"
+  addusericon: {
+    width: 25, height: 25, tintColor: 'white'
   },
-  middleLeftText:{
-    color:"#E20000",fontSize: 20
+  bottomView: {
+    flex: 0.5, paddingHorizontal: 10
   },
-  middleRight:{
-    flex:0.2
-  },
-  middlerightbutton:{
-    width:60,height:60,backgroundColor: '#000000',borderRadius: 10,justifyContent:"center",alignItems:"center"
-  },
-  addusericon:{
-    width:25,height:25,tintColor: 'white'
-  },
-  bottomView:{
-    flex:0.5,paddingHorizontal: 10
-  },
-  listStyles:{
-    flex:1,marginVertical: 20
+  listStyles: {
+    flex: 1, marginVertical: 20
   }
 
 })
